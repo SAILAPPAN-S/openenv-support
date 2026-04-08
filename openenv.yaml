@@ -1,0 +1,23 @@
+name: support-env
+description: Customer support simulation environment
+
+actions:
+  type: object
+  properties:
+    message:
+      type: string
+
+observations:
+  type: object
+  properties:
+    ticket_id:
+      type: integer
+    ticket_text:
+      type: string
+    last_agent_message:
+      type: string
+    status:
+      type: string
+      
+reward:
+  type: float
